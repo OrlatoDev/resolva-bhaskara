@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="height: 100vh; background-color: black;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="shortcut icon" href="./ico.ico" type="image/x-icon">
+    <title>Bhaskara</title>
+</head>
+<body class="is-flex is-justify-content-center is-align-content-center">
+    <div style="max-width: 800px;">
+        <div>
+            <section class="hero m-2" style="background-color: rgba(17, 17, 17, 0.727); border-radius: 1rem;">
+                <div class="hero-body">
+                    <p class="title has-text-white">
+                        Bhaskara
+                    </p>
+                    <p class="subtitle has-text-white">
+                        Resolvedor de equação de 2° grau completa online
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div>
+            <div class="field m-3">
+                <label class="label has-text-white">Digite a equação de 2° grau completa:</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Digite aqui..." id="input">
+                </div>
+            </div>
+            <div class="field m-3">
+                <div class="control is-flex is-flex-direction-column has-text-white">
+                    <button type="button" class="button has-text-white" style="background-color: rgba(17, 17, 17, 0.727); border: none;" id="calc">Calcular</button>
+                </div>
+            </div>
+        </div>
+        <div id="result">
+            
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.6.8/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
